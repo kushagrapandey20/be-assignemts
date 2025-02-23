@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📋 My Tasks</h1>
+        <ul>
+            <% tasks.forEach(task => { %>
+                <li>
+                    <span><%= task.title %></span>
+                    <a href="/task?id=<%= task.id %>">🔍 View</a>
+                </li>
+            <% }); %>
+        </ul>
+        <a href="/add-task">➕ Add New Task</a>
+    </div>
+</body>
+</html>

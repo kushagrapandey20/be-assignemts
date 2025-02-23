@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Task Details</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📝 Task Details</h1>
+        <div class="task-box">
+            <% if (task) { %>
+                <p><strong>Title:</strong> <%= task.title %></p>
+            <% } else { %>
+                <p style="color: red;">Task not found!</p>
+            <% } %>
+        </div>
+        <a href="/tasks">🔙 Back to List</a>
+    </div>
+</body>
+</html>
